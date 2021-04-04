@@ -36,4 +36,8 @@ if res > 0:
     print("1원 : {}개".format(res))
 
 
-
+cash = int(cash)
+for won in [50000, 10000, 5000, 1000, 500, 100, 50, 10, 50, 1]:
+    count = cash // won
+    cash -= count*won
+    print('{0}원: {1}개'.format(won, count))
